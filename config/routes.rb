@@ -1,5 +1,5 @@
 DonationTracker::Application.routes.draw do
-  match "/total" => "totals#total"
+  root :to => "totals#total"
 
   resources :donations
 
