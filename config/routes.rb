@@ -1,6 +1,6 @@
 DonationTracker::Application.routes.draw do
   root :to => "totals#total"
-
+  get "totals/total"
   resources :donations
 
 
