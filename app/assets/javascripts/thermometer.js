@@ -1,3 +1,5 @@
+//Code adapted from http://jsfiddle.net/GeekyJohn/vQ4Xn/
+
 //originally from [url]http://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-money-in-javascript[/url]
 function formatCurrency(n, c, d, t) {
     "use strict";
