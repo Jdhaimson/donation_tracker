@@ -1,4 +1,18 @@
-<div id="data">
-  <!-- will be filled with JSON via AJAX -->
+<h1> Total Amount of Money Raised: </h1>
+<h1><div class="dataDisplay"></div></h1>
+
+<div id="thermometer"> 
+ 
+    <div class="track"> 
+        <div class="goal"> 
+            <div class="amount"></div> 
+        </div> 
+        <div class="progress"> 
+            <div class="amount"></div> 
+        </div> 
+    </div> 
+ 
 </div>
+
+<%= javascript_tag "thermometer()" %>
 <%= javascript_tag "startRefresh()" %>

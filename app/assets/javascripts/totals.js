@@ -1,7 +1,8 @@
 function updateData(data) {
     var total = data
-    var display = "<h1>Total Amount of Money Raised: $" + total + "</h1>"
-    $('#data').html(display)
+    var display = "$" + total
+    thermometer(1000,total,true)
+    $('.dataDisplay').html(display)
 }
 
 function startRefresh() {
