@@ -1,8 +1,14 @@
+$.mynamespace = {
+    total : 0
+}
+
 function updateData(data) {
-    var total = data
-    var display = "$" + total
-    thermometer(1000,total,true)
-    $('.dataDisplay').html(display)
+    if(data != $.mynamespace.total) {
+        $.mynamespace.total = data
+        var display = "$" + data
+        thermometer(1000,data,true)
+        $('.dataDisplay').html(display)
+    }
 }
 
 function startRefresh() {
