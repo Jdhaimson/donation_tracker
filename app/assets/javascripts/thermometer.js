@@ -49,7 +49,7 @@ function thermometer(goalAmount, progressAmount, animate) {
     //let's set the progress indicator
  
     $progress.find(".amount").hide();
- 
+
     if (animate !== false) {
         $progress.animate({
             "height": percentageAmount + "%"
