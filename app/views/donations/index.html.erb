@@ -1,6 +1,10 @@
-<h1>Listing donations</h1>
+<h1>New Donation</h1>
 
-<table>
+<%= render 'form' %>
+<hr>
+<h3>Listing donations</h3>
+
+<table class="table table-striped">
   <tr>
     <th>Amount</th>
     <th></th>
@@ -12,16 +16,14 @@
   <tr>
     <td><%= donation.amount %></td>
     <td><%= link_to 'Edit', edit_donation_path(donation) %></td>
-    <td><%= link_to 'Destroy', donation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Delete', donation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Donation', new_donation_path %>
 
 <br />
-<br />
 
-<%= link_to 'Totals Page', root_path %>
+<%= button_to 'Totals Page', root_path %>

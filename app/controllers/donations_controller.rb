@@ -3,6 +3,7 @@ class DonationsController < ApplicationController
   # GET /donations.json
   def index
     @donations = Donation.all
+    @donation = Donation.new
 
     respond_to do |format|
       format.html # index.html.erb
