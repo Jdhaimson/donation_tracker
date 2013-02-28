@@ -6,7 +6,7 @@ function updateData(data) {
     if(data != $.mynamespace.total) {
         $.mynamespace.total = data
         var display = "$" + data
-        thermometer(1000,data,true)
+        thermometer(500,data,true)
         $('.dataDisplay').html(display)
     }
 }

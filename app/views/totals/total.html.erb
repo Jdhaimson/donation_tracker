@@ -1,18 +1,26 @@
-<h1> Total Amount of Money Raised: </h1>
-<h1><div class="dataDisplay"></div></h1>
-
-<div id="thermometer"> 
- 
-    <div class="track"> 
-        <div class="goal"> 
-            <div class="amount"></div> 
-        </div> 
-        <div class="progress"> 
-            <div class="amount"></div> 
-        </div> 
-    </div> 
- 
+<div class="row-fluid">
+  <h1>Total Amount of Money Raised:</h1>
+  <h1><div class="dataDisplay"></div></h1>
 </div>
-
+<div class="row">
+  <div class="span5 hidden-phone padded-top">
+    <%= image_tag("pskcrest.gif", size: "200x200", alt: "Phi Sigma Kappa Fraternity Coat of Arms") %>
+  </div>
+  <div class="span2">
+    <div id="thermometer"> 
+        <div class="track"> 
+            <div class="goal"> 
+                <div class="amount"></div> 
+            </div> 
+            <div class="progress"> 
+                <div class="amount"></div> 
+            </div> 
+        </div> 
+    </div>
+  </div>
+  <div class="span5 hidden-phone padded-top">
+    <%= image_tag("skcrest.png", size: "150x150", alt: "Sigma Kappa Sorority Coat of Arms") %>
+  </div>
+</div>
 <%= javascript_tag "thermometer()" %>
 <%= javascript_tag "startRefresh()" %>
