@@ -1,29 +1,29 @@
-<h1>New Donation</h1>
+<div class="row-fluid"><div class="span4 offset4">
+  <h1>New Donation</h1>
+  <%= render 'form' %>
+  <hr>
+</div></div>
+<div class="row-fluid">
+  <h3>Listing donations</h3>
+  <div id="d-list" class="span4 offset4">
+    <table class="table table-striped">
+      <tr>
+        <th>Amount</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
 
-<%= render 'form' %>
-<hr>
-<h3>Listing donations</h3>
-
-<table class="table table-striped">
-  <tr>
-    <th>Amount</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @donations.each do |donation| %>
-  <tr>
-    <td><%= donation.amount %></td>
-    <td><%= link_to 'Edit', edit_donation_path(donation) %></td>
-    <td><%= link_to 'Delete', donation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-
-<br />
-
-<%= button_to 'Totals Page', root_path %>
+    <% @donations.each do |donation| %>
+      <tr>
+        <td><%= donation.amount %></td>
+        <td><%= link_to 'Edit', edit_donation_path(donation) %></td>
+        <td><%= link_to 'Delete', donation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    </table>
+  </div>
+</div>
+<div class="row-fluid">
+  <%= button_to 'Totals Page', root_path %>
+</div>
